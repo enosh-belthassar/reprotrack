@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f7f9fc", "on-primary-fixed": "#0a1c31", "surface-tint": "#4f5f77", "surface-variant": "#e0e3e6", "tertiary-fixed-dim": "#61dcac", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#005139", "outline": "#74777d", "on-surface-variant": "#44474d", "inverse-surface": "#2d3133", "primary-fixed-dim": "#b7c8e3", "on-secondary-fixed": "#001d34", "error": "#ba1a1a", "primary": "#001125", "on-secondary-fixed-variant": "#2f4962", "on-secondary-container": "#4a637e", "on-primary": "#ffffff", "on-background": "#191c1e", "surface-dim": "#d8dadd", "on-error": "#ffffff", "inverse-primary": "#b7c8e3", "on-primary-container": "#7d8da7", "tertiary-container": "#002c1d", "surface-bright": "#f7f9fc", "on-error-container": "#93000a", "tertiary": "#00140c", "tertiary-fixed": "#7ff9c7", "secondary-container": "#c5dfff", "on-secondary": "#ffffff", "surface-container": "#eceef1", "primary-fixed": "#d3e4ff", "error-container": "#ffdad6", "on-tertiary-container": "#09a075", "outline-variant": "#c4c6cd", "on-tertiary-fixed": "#002115", "primary-container": "#15263b", "secondary": "#47617b", "on-tertiary": "#ffffff", "surface-container-highest": "#e0e3e6", "surface": "#f7f9fc", "secondary-fixed-dim": "#afc9e8", "surface-container-high": "#e6e8eb", "inverse-on-surface": "#eff1f4", "on-primary-fixed-variant": "#37485e", "on-surface": "#191c1e", "surface-container-low": "#f2f4f7", "secondary-fixed": "#cfe4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-sm": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin-lg": "2rem", "gutter": "1rem", "gutter-sm": "0.75rem", "gutter-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Hanken Grotesk"], "headline-xl": ["Hanken Grotesk"], "headline-md": ["Hanken Grotesk"], "label-lg": ["JetBrains Mono"], "headline-xl-mobile": ["Hanken Grotesk"], "headline-sm": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "label-sm": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "body-lg": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"] }, "fontSize": { "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-sm": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-lg": ["15px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ReproTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzCf3ejwAZ3shBGfyNmpAeVv4dNTaqJVTYacYZqZlWiVOkZgznOtQSyB_hfD4GbMrJ5xHah7ts16IYV5kWHSkOBnGKJFWer77lIAM4K8rR5bTE-U5dasnJbxEEQH84aT4U7_2qebWFjrvksOkwwPPxzVJpG5N0jcPsaIQoUWoDpnlcSFO76A_bReWj_e_MXNJ58NLl6Zu-4EXeM3oHTdExK2Nsr2py7HsSWvFajzkS8g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">ReproTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase mt-0.5">QA Suite</span></div></div><div class="flex items-center gap-space-xs"><div class="text-right mr-1 hidden sm:block"><span class="font-label-sm text-label-sm text-on-surface font-semibold block">Projects</span><span class="font-label-sm text-label-sm text-on-tertiary-container block">LIVE REPRO</span></div><a class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-error transition-colors" data-path="login" href="#" title="Sign out of workspace"><span class="material-symbols-outlined text-[20px]">logout</span></a><button class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9F35LVRBGeqSDaU1xEKVIhZqAhRrh5LetX8oynbt5Rn-aS387U17XOykelfzI3fPPxgSOFGlBY57_bk-Ee_v7UTNzY_63Ot0zAFWY5aB5PWKqqcHcb7WqHdzSZnBlBiURzLNtfsiwzmMAoU5yLiWGEvNL3q1wNFVYMYI6ewEhuhm-U0W2hkhSBKOIpkOBOLt6uO-Gpk2P8FCpF-YFeOsC1HIzmqq7iKrho0b_jz81"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full px-margin-sm space-y-space-md">
+<!-- Header / Action Bar -->
+<div class="flex items-center justify-between pt-space-sm">
+<div class="flex flex-col min-w-0 pr-space-sm">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight truncate">Projects</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Organize issues by product, application, or development project</p>
+</div>
+<button aria-expanded="false" aria-haspopup="dialog" class="flex-shrink-0 inline-flex items-center gap-space-xs bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-sm rounded-lg shadow-sm hover:brightness-95 active:scale-95 transition-all text-label-md font-label-md uppercase tracking-wider font-semibold" id="open-modal-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>New Project</span>
+</button>
+</div>
+<!-- Search & Filter Area -->
+<div class="relative w-full">
+<div class="relative flex items-center bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-space-md bg-transparent text-on-surface font-body-md text-body-md placeholder-outline focus:outline-none focus:bg-surface-container-low transition-colors rounded-lg" id="project-search" placeholder="Search projects by name or key..." type="search"/>
+<button class="hidden pr-space-md text-on-surface-variant hover:text-primary" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Project Grid / List -->
+<div class="flex flex-col space-y-space-sm" id="project-list">
+<!-- Project Card 1: ReproTrack Core API -->
+<article class="project-item flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md" data-project-key="rt" data-project-name="reprotrack core api">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md tracking-wider flex-shrink-0">
+            RT
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary truncate">ReproTrack Core API</h2>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">RT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Backend FastAPI service and auth modules</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed/30 text-on-tertiary-fixed-variant flex-shrink-0 font-medium uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+          Active
+        </span>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 gap-space-xs my-space-md bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Members</span>
+<span class="font-label-md text-label-md font-semibold text-primary">6 online</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]">bug_report</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Open Issues</span>
+<span class="font-label-md text-label-md font-semibold text-error">14 triage</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-1.5 overflow-hidden">
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="QA engineer avatar with tech specs portrait in soft focused background light with deep indigo tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Wpz82KMqZTtr7WzFN905jZwNPG6a-ea2Su2sd8CIUbD-8jE-YoLenx4dSfPRY-IUlcx_M31t6yJ0h3V2wyzVB1CxT2WsJEq_rhKy1SPdFmwovraYB6yz9tojcFP4yBHn2Kg2xSHUtwo2lWzEnmDXDuU2IO1LJygruNzSxtaceQGMQXk11xKDUHnwG78YAIgJWmCxQ3TxLyS76PDJnVMuotRhWlQsk1yBJlK_zPhA"/>
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Backend developer portrait looking into monitor glow with sleek dark aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANL3iJvP9jRsk0C3KLKcj6YEVSzD_qENrBSmz9MzbCDAL6ov3X7GOF25459JN1JhcTbDHA_xLDphkOI9hUYIJmXJ3x-3n5AgSsTtId3IAtCrWU7GKAqRYgz67Hd3OfKactWhJ8BE41E3ftfC0U8YmqOeIJMDumPRtQaMWOVj--31enSn1Ub7qbwuua88EmTsKBWtBcCMYBR1zGcBGfqxdrXKJDekb1Zo2kizUN3UQa"/>
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Security specialist profile image in modern bright design studio with clean teal highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2q-kRdLkoYW1RGzob4MMxURFGrfw7Xoa-Bikq-UNiZMLcBs8I2inCKoe4ipWvqFdgZnCWVjZ5bslLaxjmTJ7nyZXggXaU0Mp2LLGZHA3eW_IXWOs_2r7z7jgvL6MHiYRjeUMU_3w3epXbhgXfbAM7q0Sr26FA2uBPNVwmj31-kqdCfesamQnMQPfCXWI8DjBLGi_Ig8VcduBA9dpuXJTGsjO1DtpCrwkQNvUo-28J"/>
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center font-bold">+3</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim transition-colors font-label-md text-label-md" data-path="issues" href="#">
+<span>View issues</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button aria-label="Project Settings" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Project Card 2: Mobile Client & Flet App -->
+<article class="project-item flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md" data-project-key="rtf" data-project-name="mobile client &amp; flet app">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md tracking-wider flex-shrink-0">
+            RTF
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary truncate">Mobile Client &amp; Flet App</h2>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">RTF</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Cross-platform client frontend</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed/30 text-on-tertiary-fixed-variant flex-shrink-0 font-medium uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+          Active
+        </span>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 gap-space-xs my-space-md bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Members</span>
+<span class="font-label-md text-label-md font-semibold text-primary">4 assigned</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">bug_report</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Open Issues</span>
+<span class="font-label-md text-label-md font-semibold text-primary">9 tracked</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-1.5 overflow-hidden">
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Mobile app designer headshot smiling in natural ambient soft warm studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOBWphXpammRzD132wWQBAwn3t8YQAYcYQwtxD8Wl9tTJxYkwMKwUloXVL0O4K3Udp4JPwWDia59EnKoyPjeQypgier5-dxehGSu3fwRm10ctQT7QZWfEECxNJKELXDTSzTCrPOHRLRKAxv4ef8AorL6tXuvyZ4aJSwQfkU9W8KQpZQVEVidqo8hj4QDcVHunDJKpUFy-VYMmxEuLyMRVYKR6siSQS8a06JXY_8K1H"/>
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Software QA test engineer reviewing mobile logs in front of multiple screen displays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcmSBV7OvmeuJoPuHg0z29sgNcXkPOkX1OrgCIpgdwWJlU1v23ZCvbKu_wmoH4rHUznHvBLciM-qCUOrFAz0uNUt65pBhOGHdSfyFO1JrprEeZ7iC1UhFYEnhKrG_tq9GeWQLJg-U-Wpg801Bb-grek6-R0fJPKhl9gWkJN3aI_IbNyYzkSglsG2g8Ia4AaTwC272htumXzulHa1XZTINdIYEjz3b4p6qbivwe6Tp4"/>
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center font-bold">+2</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim transition-colors font-label-md text-label-md" data-path="issues" href="#">
+<span>View issues</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button aria-label="Project Settings" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Project Card 3: Billing & Webhooks Gateway -->
+<article class="project-item flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md" data-project-key="bwg" data-project-name="billing &amp; webhooks gateway">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md tracking-wider flex-shrink-0">
+            BWG
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary truncate">Billing &amp; Webhooks Gateway</h2>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">BWG</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Stripe and external payments connector</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed/30 text-on-tertiary-fixed-variant flex-shrink-0 font-medium uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+          Active
+        </span>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 gap-space-xs my-space-md bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Members</span>
+<span class="font-label-md text-label-md font-semibold text-primary">3 active</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">bug_report</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Open Issues</span>
+<span class="font-label-md text-label-md font-semibold text-primary">5 logged</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-1.5 overflow-hidden">
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Fintech security lead portrait professional modern backdrop navy accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3CX57c-WivamVkYRWO13b_MDYVmpF78gBYuaRkBGetCqkSb-GxH-eqAstrhb_6vt8DbALDms7eh8NCbvCaRbEg4M9SjR6T8kandMuyxXZoGy2QjYRD0WU2Pk5YG60jaV57PPNYAM5BNFMgvvgOkKxVTClmBlHfb9DQ03Tf9HeJN9KBgFgFVqnHhcILgt265XV8CpYMS-ahrtLT30sl3t-FmdXiTuP8f7_K_lSQB6"/>
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Lead integration systems tester with high-contrast sharp studio portrait lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn52docz28Rx8NBgk_fvt3bBwYTjLUn7_ahgPIjvrrf1iu4uCTseHUYuDAfWXYdDLyI7a8m8BQj2LcF9IrGnTtRNkhFSR-Lg-KS8vntnEGd8YQHAzGDW7jroPXFx7t4lAZMLU8BP_Pb3Er2RMO30mGNsvaQQa5KR39uVp6tkEd6Sc2jdu5ZyCDOQI4zqzVk7BN1y_Kv0IgsQ_rwoq0-2rp_d8AH53xAxYcRBYl75EP"/>
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center font-bold">+1</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim transition-colors font-label-md text-label-md" data-path="issues" href="#">
+<span>View issues</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button aria-label="Project Settings" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Project Card 4: Legacy Sync Daemon -->
+<article class="project-item flex flex-col bg-surface-container-lowest/80 rounded-xl p-space-md shadow-sm transition-all hover:shadow-md opacity-90" data-project-key="lsd" data-project-name="legacy sync daemon">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md text-label-md tracking-wider flex-shrink-0">
+            LSD
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Legacy Sync Daemon</h2>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">LSD</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Deprecated nightly data migration daemon</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant flex-shrink-0 font-medium uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+          Archived
+        </span>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 gap-space-xs my-space-md bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">group</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Members</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">2 assigned</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Open Issues</span>
+<span class="font-label-md text-label-md font-semibold text-on-tertiary-container">0 issues</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-1.5 overflow-hidden opacity-75">
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Senior maintenance software engineer portrait looking into screen reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs779JlN_BOaJDSZQ0YBylQWNAF2IOIwbNaoFGfSwulRQJYq1_OhDZDlXilcyCJHWKsKKmRrLI_so8vO_VIRTu-IxtfYn59IkpTXR5raaUF-PHVxdUJKM2LF4nqE6BfxtnD8Pu8zw9e5O-8yhe7-yQuTxWFcHVFGDQ-RUmAKrpuAQGl2rJBJ22ZCdn22KNhfBYWJyeBtujonajRkikHYFnSL0Jm-rvnRLBxUL4i_JJ"/>
+<img class="w-6 h-6 rounded-full object-cover shadow-sm ring-1 ring-surface-container-lowest" data-alt="Systems administrator engineer in server room ambient lights portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs40lVMZMrTTpMmE4Krok6SBcmpfiOq6Dr3kdRXh_jVuyuHtelYWBtuo0b0_bMUAO5qXSk9jRzd9ysYjrVroLxrRRKVmBnIeczg5_D3pd93ASLZyCnsM9qme8PuzEM_CZE8biT6UXDTdqZz2cy99hwWPQVX8Ef7hOnETu7l7EGwMfosWn4BduFsKJp-U-rfl4safqBf9gRROVkREoH-HVzSM7yarYKmdT9sAXXkVSJ"/>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors font-label-md text-label-md" data-path="issues" href="#">
+<span>View issues</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button aria-label="Project Settings" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Empty Search State -->
+<div class="hidden flex flex-col items-center justify-center py-space-xl px-space-md text-center bg-surface-container-lowest rounded-xl" id="no-results-state">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">folder_off</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">No projects found</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-xs">No matching projects match your search query. Try another keyword or create a new project.</p>
+<button class="mt-space-md inline-flex items-center gap-1 text-primary font-label-md text-label-md underline underline-offset-4" id="reset-search-btn" type="button">
+        Reset search filter
+      </button>
+</div>
+</div>
+<!-- Create Project Inline Drawer / Quick Dialog Backdrop & Sheet -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden transition-opacity opacity-0" id="project-drawer-backdrop">
+<div class="w-full h-full flex flex-col justify-end">
+<!-- Sheet Modal Content -->
+<div aria-labelledby="modal-title" aria-modal="true" class="w-full max-w-lg mx-auto bg-surface-container-lowest rounded-t-xl shadow-xl transform translate-y-full transition-transform duration-300 ease-out flex flex-col max-h-[751px] overflow-hidden" id="project-drawer-card" role="dialog">
+<!-- Modal Top Handle & Header -->
+<div class="pt-space-sm px-space-md flex flex-col items-center">
+<div class="w-10 h-1 rounded-full bg-outline-variant mb-space-sm"></div>
+<div class="w-full flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-tertiary-fixed/40 text-on-tertiary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">create_new_folder</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary" id="modal-title">Create New Project</h2>
+</div>
+<button aria-label="Close dialog" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Form Body -->
+<form class="flex flex-col flex-1 px-space-md pb-space-lg space-y-space-md overflow-y-auto" id="create-project-form">
+<!-- Field: Project Name -->
+<div class="flex flex-col space-y-1">
+<div class="flex justify-between items-baseline">
+<label class="font-label-md text-label-md text-primary font-semibold" for="project-name-input">
+                Project Name <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Required</span>
+</div>
+<input class="w-full h-10 px-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-tertiary-fixed-dim transition-all" id="project-name-input" placeholder="e.g. Telemetry Stream Collector" required="" type="text"/>
+</div>
+<!-- Field: Project Key / Prefix -->
+<div class="flex flex-col space-y-1">
+<div class="flex justify-between items-baseline">
+<label class="font-label-md text-label-md text-primary font-semibold" for="project-key-input">
+                Project Key Prefix <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2-5 uppercase chars</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-10 px-space-md uppercase font-label-md text-label-md bg-surface-container-low text-on-surface rounded-lg tracking-widest focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-tertiary-fixed-dim transition-all" id="project-key-input" maxlength="5" placeholder="TSC" required="" type="text"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-outline">Ex: TSC-104</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Used as the unique namespace identifier for ticket reproduction paths.</p>
+</div>
+<!-- Field: Description -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-primary font-semibold" for="project-desc-input">
+              Description <span class="font-normal text-on-surface-variant">(optional)</span>
+</label>
+<textarea class="w-full p-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg resize-none focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-tertiary-fixed-dim transition-all" id="project-desc-input" placeholder="Describe components, testing environment, or scope..." rows="3"></textarea>
+</div>
+<!-- Action Buttons -->
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="w-1/2 py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors font-headline-sm text-headline-sm text-center" id="cancel-modal-btn" type="button">
+              Cancel
+            </button>
+<button class="w-1/2 py-2.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm text-center shadow-sm hover:brightness-95 active:scale-95 transition-all font-semibold" type="submit">
+              Create project
+            </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Inline feedback notification toaster -->
+<div class="fixed top-20 left-4 right-4 max-w-sm mx-auto z-50 bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-sm hidden transform -translate-y-4 transition-all duration-200" id="toast-banner">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+<span class="font-body-md text-body-md flex-1" id="toast-msg">Project created successfully.</span>
+</div>
+</div>
+<script>
+  (function () {
+    const openBtn = document.getElementById('open-modal-btn');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const cancelBtn = document.getElementById('cancel-modal-btn');
+    const backdrop = document.getElementById('project-drawer-backdrop');
+    const drawerCard = document.getElementById('project-drawer-card');
+    const createForm = document.getElementById('create-project-form');
+    const nameInput = document.getElementById('project-name-input');
+    const keyInput = document.getElementById('project-key-input');
+    const descInput = document.getElementById('project-desc-input');
+    const searchInput = document.getElementById('project-search');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const resetSearchBtn = document.getElementById('reset-search-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+    const noResultsState = document.getElementById('no-results-state');
+    const toast = document.getElementById('toast-banner');
+    const toastMsg = document.getElementById('toast-msg');
+
+    function openModal() {
+      backdrop.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        backdrop.classList.remove('opacity-0');
+        backdrop.classList.add('opacity-100');
+        drawerCard.classList.remove('translate-y-full');
+        drawerCard.classList.add('translate-y-0');
+      });
+      openBtn.setAttribute('aria-expanded', 'true');
+      nameInput.focus();
+    }
+
+    function closeModal() {
+      drawerCard.classList.remove('translate-y-0');
+      drawerCard.classList.add('translate-y-full');
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0');
+      setTimeout(() => {
+        backdrop.classList.add('hidden');
+      }, 300);
+      openBtn.setAttribute('aria-expanded', 'false');
+      createForm.reset();
+    }
+
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    cancelBtn.addEventListener('click', closeModal);
+
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop || e.target.firstElementChild === drawerCard) {
+        closeModal();
+      }
+    });
+
+    // Auto-populate uppercase key from project name if key is untouched
+    nameInput.addEventListener('input', () => {
+      if (!keyInput.dataset.manualEdited) {
+        const words = nameInput.value.trim().split(/\s+/).filter(Boolean);
+        if (words.length > 0) {
+          const generatedKey = words.slice(0, 3).map(w => w[0]).join('').toUpperCase();
+          keyInput.value = generatedKey;
+        } else {
+          keyInput.value = '';
+        }
+      }
+    });
+
+    keyInput.addEventListener('input', () => {
+      keyInput.dataset.manualEdited = "true";
+      keyInput.value = keyInput.value.toUpperCase();
+    });
+
+    // Handle Form Submit
+    createForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const pName = nameInput.value.trim();
+      const pKey = keyInput.value.trim();
+
+      if (!pName || !pKey) return;
+
+      closeModal();
+      showToast(`Project "${pName}" [${pKey}] initialized.`);
+    });
+
+    function showToast(message) {
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        toast.classList.remove('-translate-y-4');
+        toast.classList.add('translate-y-0');
+      });
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0');
+        toast.classList.add('-translate-y-4');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 200);
+      }, 3000);
+    }
+
+    // Search Filtering
+    function filterProjects() {
+      const query = searchInput.value.trim().toLowerCase();
+      let matchedCount = 0;
+
+      if (query.length > 0) {
+        clearSearchBtn.classList.remove('hidden');
+      } else {
+        clearSearchBtn.classList.add('hidden');
+      }
+
+      projectItems.forEach(item => {
+        const name = item.dataset.projectName || '';
+        const key = item.dataset.projectKey || '';
+        if (name.includes(query) || key.includes(query)) {
+          item.classList.remove('hidden');
+          matchedCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      if (matchedCount === 0) {
+        noResultsState.classList.remove('hidden');
+      } else {
+        noResultsState.classList.add('hidden');
+      }
+    }
+
+    searchInput.addEventListener('input', filterProjects);
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      filterProjects();
+      searchInput.focus();
+    });
+
+    resetSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      filterProjects();
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(21,38,59,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">folder_special</span><span class="font-label-sm text-label-sm">Projects</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors" data-path="issues" href="#"><span class="material-symbols-outlined text-[22px]">bug_report</span><span class="font-label-sm text-label-sm">Issues</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors" data-path="profile-settings" href="#"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

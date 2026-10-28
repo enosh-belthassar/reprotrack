@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f7f9fc", "on-primary-fixed": "#0a1c31", "surface-tint": "#4f5f77", "surface-variant": "#e0e3e6", "tertiary-fixed-dim": "#61dcac", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#005139", "outline": "#74777d", "on-surface-variant": "#44474d", "inverse-surface": "#2d3133", "primary-fixed-dim": "#b7c8e3", "on-secondary-fixed": "#001d34", "error": "#ba1a1a", "primary": "#001125", "on-secondary-fixed-variant": "#2f4962", "on-secondary-container": "#4a637e", "on-primary": "#ffffff", "on-background": "#191c1e", "surface-dim": "#d8dadd", "on-error": "#ffffff", "inverse-primary": "#b7c8e3", "on-primary-container": "#7d8da7", "tertiary-container": "#002c1d", "surface-bright": "#f7f9fc", "on-error-container": "#93000a", "tertiary": "#00140c", "tertiary-fixed": "#7ff9c7", "secondary-container": "#c5dfff", "on-secondary": "#ffffff", "surface-container": "#eceef1", "primary-fixed": "#d3e4ff", "error-container": "#ffdad6", "on-tertiary-container": "#09a075", "outline-variant": "#c4c6cd", "on-tertiary-fixed": "#002115", "primary-container": "#15263b", "secondary": "#47617b", "on-tertiary": "#ffffff", "surface-container-highest": "#e0e3e6", "surface": "#f7f9fc", "secondary-fixed-dim": "#afc9e8", "surface-container-high": "#e6e8eb", "inverse-on-surface": "#eff1f4", "on-primary-fixed-variant": "#37485e", "on-surface": "#191c1e", "surface-container-low": "#f2f4f7", "secondary-fixed": "#cfe4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-sm": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin-lg": "2rem", "gutter": "1rem", "gutter-sm": "0.75rem", "gutter-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Hanken Grotesk"], "headline-xl": ["Hanken Grotesk"], "headline-md": ["Hanken Grotesk"], "label-lg": ["JetBrains Mono"], "headline-xl-mobile": ["Hanken Grotesk"], "headline-sm": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "label-sm": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "body-lg": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"] }, "fontSize": { "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-sm": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-lg": ["15px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ReproTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzCf3ejwAZ3shBGfyNmpAeVv4dNTaqJVTYacYZqZlWiVOkZgznOtQSyB_hfD4GbMrJ5xHah7ts16IYV5kWHSkOBnGKJFWer77lIAM4K8rR5bTE-U5dasnJbxEEQH84aT4U7_2qebWFjrvksOkwwPPxzVJpG5N0jcPsaIQoUWoDpnlcSFO76A_bReWj_e_MXNJ58NLl6Zu-4EXeM3oHTdExK2Nsr2py7HsSWvFajzkS8g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">ReproTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase mt-0.5">QA Suite</span></div></div><div class="flex items-center gap-space-xs"><div class="text-right mr-1 hidden sm:block"><span class="font-label-sm text-label-sm text-on-surface font-semibold block">Issues</span><span class="font-label-sm text-label-sm text-on-tertiary-container block">LIVE REPRO</span></div><a class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-error transition-colors" data-path="login" href="#" title="Sign out of workspace"><span class="material-symbols-outlined text-[20px]">logout</span></a><button class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9F35LVRBGeqSDaU1xEKVIhZqAhRrh5LetX8oynbt5Rn-aS387U17XOykelfzI3fPPxgSOFGlBY57_bk-Ee_v7UTNzY_63Ot0zAFWY5aB5PWKqqcHcb7WqHdzSZnBlBiURzLNtfsiwzmMAoU5yLiWGEvNL3q1wNFVYMYI6ewEhuhm-U0W2hkhSBKOIpkOBOLt6uO-Gpk2P8FCpF-YFeOsC1HIzmqq7iKrho0b_jz81"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Top Action & Overview Area -->
+<div class="px-gutter pt-space-md pb-space-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight">Issues</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Report defects, track ownership, and find issues needing attention</p>
+</div>
+<button class="shrink-0 inline-flex items-center gap-1.5 h-9 px-space-md rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-label-md shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Report a bug</span>
+</button>
+</div>
+<!-- Quick QA Metrics Banner -->
+<div class="grid grid-cols-3 gap-space-xs p-space-xs rounded-xl bg-surface-container shadow-sm">
+<div class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium uppercase tracking-wider">Unresolved</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">28</span>
+</div>
+<div class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-error font-medium uppercase tracking-wider">Blockers</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">3</span>
+</div>
+<div class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-medium uppercase tracking-wider">Ready QA</span>
+<span class="font-headline-sm text-headline-sm text-on-tertiary-container font-bold">6</span>
+</div>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="px-gutter py-space-xs flex flex-col gap-space-sm">
+<!-- Search Bar -->
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-9 pr-20 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-outline shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="issue-search" placeholder="Filter by key, title, or keyword..." type="text"/>
+<button class="absolute right-1.5 h-7 px-space-sm rounded bg-primary-container text-on-primary font-label-sm text-label-sm tracking-wide shadow-sm active:opacity-90" type="button">
+        Submit
+      </button>
+</div>
+<!-- Filter Pills Scroll Row -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar pb-1">
+<!-- Project Filter -->
+<button class="shrink-0 inline-flex items-center gap-1 h-7 px-space-sm rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm active:bg-surface-variant" type="button">
+<span class="text-on-surface-variant">Project:</span>
+<span class="font-semibold">All</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span>
+</button>
+<!-- Status Filter -->
+<button class="shrink-0 inline-flex items-center gap-1 h-7 px-space-sm rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-sm active:opacity-90" type="button">
+<span class="text-on-secondary-fixed-variant">Status:</span>
+<span class="font-semibold">Open (4)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+</button>
+<!-- Severity Filter -->
+<button class="shrink-0 inline-flex items-center gap-1 h-7 px-space-sm rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm active:bg-surface-variant" type="button">
+<span class="text-on-surface-variant">Severity:</span>
+<span class="font-semibold">All</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span>
+</button>
+<!-- Priority Filter -->
+<button class="shrink-0 inline-flex items-center gap-1 h-7 px-space-sm rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm active:bg-surface-variant" type="button">
+<span class="text-on-surface-variant">Priority:</span>
+<span class="font-semibold">All</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span>
+</button>
+<!-- Clear filters -->
+<button class="shrink-0 inline-flex items-center gap-1 h-7 px-space-xs text-error font-label-sm text-label-sm active:opacity-75" type="button">
+<span class="material-symbols-outlined text-[14px]">restart_alt</span>
+<span>Clear</span>
+</button>
+</div>
+</div>
+<!-- Issues List Section -->
+<div class="px-gutter pt-space-sm pb-space-lg flex flex-col gap-space-sm">
+<!-- Active Triage Hint Pill -->
+<div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">sync_alt</span>
+<span>Sort by Last Activity • Live Repro</span>
+</div>
+<span class="font-mono text-on-surface text-label-sm">4 DISPLAYED</span>
+</div>
+<!-- Issue 1: RT-108 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow active:bg-surface-container-low cursor-pointer">
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold px-1.5 py-0.5 rounded bg-surface-container-high">RT-108</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">RT</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-error-container text-error">
+            CRITICAL
+          </span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-error/10 text-error font-medium">
+            URGENT
+          </span>
+</div>
+</div>
+<a class="font-headline-sm text-headline-sm text-primary leading-snug line-clamp-2 hover:underline" href="#">
+        Auth token refresh loop on mobile disconnect
+      </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">
+        Socket reconnect storm triggers HTTP 429 flood and deadlocks local keychain write mutex.
+      </p>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            IN PROGRESS
+          </span>
+</div>
+<div class="flex items-center gap-1.5">
+<img class="w-5 h-5 rounded-full object-cover shadow-xs" data-alt="Portrait avatar of Marcus V, Lead Systems Test Engineer with glasses and navy work jacket looking sharp and focused in studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbxqf5kXEcYNf3m6YFS6b_pPYE_xygYGLr_jfX3eFQO1MNELf-MqHtnckpMnK1-F6fbYZ5Q1A5CriCF5zh2b2aHOHShWxwlr0VVr-Tv6DkH7rGuq91CM8VbdG2YIdMqY7vOv2ggc9GgDJL-PhCSNl_q-Pv4DJEmAcQBF_4hNxEmhW5Hw11L_oVZO-5b7AD5-PkavbWkR4oYI8mPG_Qpl07Ch5EEQ6XuJkaWxApCTk-"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Marcus V.</span>
+</div>
+</div>
+</div>
+<!-- Issue 2: RT-107 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow active:bg-surface-container-low cursor-pointer">
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold px-1.5 py-0.5 rounded bg-surface-container-high">RT-107</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">RT</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-variant text-on-secondary-fixed-variant">
+            HIGH
+          </span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface font-medium">
+            HIGH
+          </span>
+</div>
+</div>
+<a class="font-headline-sm text-headline-sm text-primary leading-snug line-clamp-2 hover:underline" href="#">
+        SQL connection pool exhaustion under load
+      </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">
+        Async worker tasks abandon idle read connections when payload exceeds 12MB.
+      </p>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-primary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span>
+            AWAITING FIX
+          </span>
+</div>
+<div class="flex items-center gap-1.5">
+<img class="w-5 h-5 rounded-full object-cover shadow-xs" data-alt="Portrait avatar of Alex C, Senior Backend Developer with earphones and black t-shirt in ambient office glow with soft blue rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbdd7fqo-TutiQ9Lijre9Ad7cut8jJGUZSWb0nYsb5XdFggFfhsJmoH_WZ4QKon6wxrTYG38Hhw4NvY2F7C3GHkI20Kzf_gVxbK1FUzvFpLvhFFijBZ9BjB2VseRKZxvoYaMiTRgROBS737_pIFPp8uzfrXxrlhPGLniD9WWDRCT4zYm9qsU6siK4zLFHKduY8x8fn5Y2pR4s6r9CgdL3W4BZGZ1G1BF6RtYj-LoU_"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Alex C.</span>
+</div>
+</div>
+</div>
+<!-- Issue 3: RT-105 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow active:bg-surface-container-low cursor-pointer">
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold px-1.5 py-0.5 rounded bg-surface-container-high">RT-105</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">RTF</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface-variant">
+            MEDIUM
+          </span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+            NORMAL
+          </span>
+</div>
+</div>
+<a class="font-headline-sm text-headline-sm text-primary leading-snug line-clamp-2 hover:underline" href="#">
+        Dark mode contrast failure on table borders
+      </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">
+        Nested sub-grid divider lines drop below 2.4:1 contrast ratio against container background.
+      </p>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-fixed-variant"></span>
+            READY FOR QA
+          </span>
+</div>
+<div class="flex items-center gap-1.5">
+<img class="w-5 h-5 rounded-full object-cover shadow-xs" data-alt="Portrait avatar of Sarah K, Quality Assurance Automation Engineer smiling warmly with neat modern blazer against architectural workspace background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV_Kjwtwf-IOU7nlOfzVPVQRJ_z1XIzCKFI8SgbaBjmGw18FA36Op8_JZyEWXc5J1XRzyMwtn8HnFSIG-dvIciwLxM5Qqyes2tVt-v9rIluEcCXRHCrylX5y_YAOUk-rDbi0tZGkyn0gIvk0BDrD-N2mGER-3minG-VwLd63WbrN-LYiCsEcgpnmFR-46UbYRhwuYt5qpfA17aDZFala_RM1FoTLD2aRwyFQiZgjQv"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Sarah K.</span>
+</div>
+</div>
+</div>
+<!-- Issue 4: RT-102 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow active:bg-surface-container-low cursor-pointer">
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold px-1.5 py-0.5 rounded bg-surface-container-high">RT-102</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">BWG</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-container text-outline">
+            LOW
+          </span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-outline font-medium">
+            LOW
+          </span>
+</div>
+</div>
+<a class="font-headline-sm text-headline-sm text-primary leading-snug line-clamp-2 hover:underline" href="#">
+        Export to CSV truncates multibyte UTF-8 names
+      </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">
+        Cyrillic and East Asian glyphs get stripped after 64 characters in stream buffer exporter.
+      </p>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-variant text-on-surface-variant font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            TRIAGE
+          </span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center text-outline text-[12px] font-bold">?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">Unassigned</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Bottom Bar -->
+<div class="px-gutter pt-space-xs pb-space-xl flex items-center justify-between bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+      Showing <strong class="text-on-surface font-semibold">1-4</strong> of <strong class="text-on-surface font-semibold">28</strong> issues
+    </span>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center justify-center h-8 px-space-sm rounded-lg bg-surface-container text-outline font-label-sm text-label-sm opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px] mr-0.5">chevron_left</span>
+        Previous
+      </button>
+<button class="inline-flex items-center justify-center h-8 px-space-sm rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform" type="button">
+        Next
+        <span class="material-symbols-outlined text-[16px] ml-0.5">chevron_right</span>
+</button>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(21,38,59,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">folder_special</span><span class="font-label-sm text-label-sm">Projects</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="issues" href="#"><span class="material-symbols-outlined text-[22px]">bug_report</span><span class="font-label-sm text-label-sm">Issues</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors" data-path="profile-settings" href="#"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

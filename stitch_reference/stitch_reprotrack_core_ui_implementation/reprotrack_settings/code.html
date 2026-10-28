@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f7f9fc", "on-primary-fixed": "#0a1c31", "surface-tint": "#4f5f77", "surface-variant": "#e0e3e6", "tertiary-fixed-dim": "#61dcac", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#005139", "outline": "#74777d", "on-surface-variant": "#44474d", "inverse-surface": "#2d3133", "primary-fixed-dim": "#b7c8e3", "on-secondary-fixed": "#001d34", "error": "#ba1a1a", "primary": "#001125", "on-secondary-fixed-variant": "#2f4962", "on-secondary-container": "#4a637e", "on-primary": "#ffffff", "on-background": "#191c1e", "surface-dim": "#d8dadd", "on-error": "#ffffff", "inverse-primary": "#b7c8e3", "on-primary-container": "#7d8da7", "tertiary-container": "#002c1d", "surface-bright": "#f7f9fc", "on-error-container": "#93000a", "tertiary": "#00140c", "tertiary-fixed": "#7ff9c7", "secondary-container": "#c5dfff", "on-secondary": "#ffffff", "surface-container": "#eceef1", "primary-fixed": "#d3e4ff", "error-container": "#ffdad6", "on-tertiary-container": "#09a075", "outline-variant": "#c4c6cd", "on-tertiary-fixed": "#002115", "primary-container": "#15263b", "secondary": "#47617b", "on-tertiary": "#ffffff", "surface-container-highest": "#e0e3e6", "surface": "#f7f9fc", "secondary-fixed-dim": "#afc9e8", "surface-container-high": "#e6e8eb", "inverse-on-surface": "#eff1f4", "on-primary-fixed-variant": "#37485e", "on-surface": "#191c1e", "surface-container-low": "#f2f4f7", "secondary-fixed": "#cfe4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-sm": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin-lg": "2rem", "gutter": "1rem", "gutter-sm": "0.75rem", "gutter-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Hanken Grotesk"], "headline-xl": ["Hanken Grotesk"], "headline-md": ["Hanken Grotesk"], "label-lg": ["JetBrains Mono"], "headline-xl-mobile": ["Hanken Grotesk"], "headline-sm": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "label-sm": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "body-lg": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"] }, "fontSize": { "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-sm": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-lg": ["15px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ReproTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzCf3ejwAZ3shBGfyNmpAeVv4dNTaqJVTYacYZqZlWiVOkZgznOtQSyB_hfD4GbMrJ5xHah7ts16IYV5kWHSkOBnGKJFWer77lIAM4K8rR5bTE-U5dasnJbxEEQH84aT4U7_2qebWFjrvksOkwwPPxzVJpG5N0jcPsaIQoUWoDpnlcSFO76A_bReWj_e_MXNJ58NLl6Zu-4EXeM3oHTdExK2Nsr2py7HsSWvFajzkS8g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">ReproTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase mt-0.5">QA Workspace</span></div></div><div class="flex items-center gap-space-xs"><div class="text-right mr-1 hidden sm:block"><span class="font-label-sm text-label-sm text-on-surface font-semibold block">Reprotrack Settings</span><span class="font-label-sm text-label-sm text-on-tertiary-container block font-mono">STAGING v2.4</span></div><a class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-error transition-colors" data-path="login" href="#" title="Sign out of workspace"><span class="material-symbols-outlined text-[20px]">logout</span></a><button aria-label="User account menu" class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Lead QA Specialist" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9F35LVRBGeqSDaU1xEKVIhZqAhRrh5LetX8oynbt5Rn-aS387U17XOykelfzI3fPPxgSOFGlBY57_bk-Ee_v7UTNzY_63Ot0zAFWY5aB5PWKqqcHcb7WqHdzSZnBlBiURzLNtfsiwzmMAoU5yLiWGEvNL3q1wNFVYMYI6ewEhuhm-U0W2hkhSBKOIpkOBOLt6uO-Gpk2P8FCpF-YFeOsC1HIzmqq7iKrho0b_jz81"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full px-gutter py-space-sm gap-space-md">
+<!-- Breadcrumb & Header Title -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>System Workspace</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Settings</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight">Settings</h1>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono">NODE-04</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Review application configuration, connection status, and session telemetry.
+    </p>
+</div>
+<!-- Live Connection Status Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<!-- Subtle mint accent corner decoration -->
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary-fixed/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">lan</span>
+<span class="font-headline-sm text-headline-sm text-primary">API &amp; Service Health</span>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container/10">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-on-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-on-tertiary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">API Reachable</span>
+</div>
+</div>
+<!-- Base URL & Meta -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Gateway Endpoint</span>
+<span class="font-label-sm text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">ENV / Read-only</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-mono select-all truncate">https://api.reprotrack.internal/v1</span>
+</div>
+<!-- Health Stats & Refresh Trigger -->
+<div class="flex items-center justify-between pt-0.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">speed</span>
+<span>Last verified: <strong class="text-on-surface font-mono font-medium">42s ago</strong> (24ms latency)</span>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-on-tertiary-container text-on-secondary font-headline-sm text-label-md shadow-sm active:scale-95 transition-all hover:opacity-95" id="btn-recheck" type="button">
+<span class="material-symbols-outlined text-[16px]" id="recheck-icon">refresh</span>
+<span>Check</span>
+</button>
+</div>
+</div>
+<!-- Grouped Configuration Accordions -->
+<div class="flex flex-col gap-space-sm">
+<!-- Section 1: Application Configuration -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="accordion-trigger w-full flex items-center justify-between p-space-md text-left bg-surface-container-lowest" data-target="panel-app-config" type="button">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Application Configuration</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-mono">RUNTIME • READ-ONLY</span>
+</div>
+</div>
+<span class="accordion-arrow material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="accordion-content px-space-md pb-space-md flex flex-col gap-2.5" id="panel-app-config">
+<div class="h-[1px] bg-surface-container mb-0.5"></div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">App Version</span>
+<span class="font-label-sm text-label-sm font-mono text-primary font-semibold">v2.14.0-rc3 <span class="text-on-surface-variant font-normal">(b410)</span></span>
+</div>
+<div class="flex items-start justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Database Engine</span>
+<span class="font-label-sm text-label-sm font-mono text-right text-primary">PostgreSQL 16.2<br/><span class="text-[10px] text-on-surface-variant">Managed Pool</span></span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Environment</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container text-on-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Production QA Staging</span>
+</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Security Policy</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-container font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>Audit Immutability Active</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Session & Identity -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="accordion-trigger w-full flex items-center justify-between p-space-md text-left bg-surface-container-lowest" data-target="panel-session" type="button">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Session &amp; Identity</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-mono">TOKEN • EXPIRATION</span>
+</div>
+</div>
+<span class="accordion-arrow material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="accordion-content px-space-md pb-space-md flex flex-col gap-2.5" id="panel-session">
+<div class="h-[1px] bg-surface-container mb-0.5"></div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Authenticated User</span>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-primary font-semibold block">Sarah K.</span>
+<span class="font-label-sm text-[10px] font-mono text-on-surface-variant block">sarah.k@team.internal</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Global Role</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-semibold">Administrator</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Session TTL</span>
+<span class="font-label-sm text-label-sm font-mono text-on-surface">Valid 7h 18m <span class="text-[10px] text-on-surface-variant">(auto)</span></span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Storage Mechanism</span>
+<span class="font-label-sm text-label-sm font-mono text-on-surface-variant">HTTP-only + TLS 1.3</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Diagnostics & Logging -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="accordion-trigger w-full flex items-center justify-between p-space-md text-left bg-surface-container-lowest" data-target="panel-diagnostics" type="button">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">bug_report</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Diagnostics &amp; Logging</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-mono">TRACE • HOOKS</span>
+</div>
+</div>
+<span class="accordion-arrow material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="accordion-content px-space-md pb-space-md flex flex-col gap-2.5" id="panel-diagnostics">
+<div class="h-[1px] bg-surface-container mb-0.5"></div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Telemetry</span>
+<span class="font-label-sm text-label-sm font-mono text-primary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span>Sentry (#rt-8821)</span>
+</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Log Verbosity</span>
+<span class="font-label-sm text-label-sm font-mono text-secondary font-medium">INFO / Audit Full</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Device Farm Hook</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-tertiary-container font-mono">
+<span class="material-symbols-outlined text-[14px]">sensors</span>
+<span>Worker online</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Zero Secret Disclosure Banner -->
+<div class="rounded-xl p-space-sm bg-surface-container-low flex items-start gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">shield</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-[13px] text-primary leading-tight">Zero Secret Leakage Guarantee</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-normal">
+        Passwords, private signing keys, and master connection secrets are omitted per security disclosure policy.
+      </p>
+</div>
+</div>
+<!-- Action Panel -->
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm shadow-sm active:scale-[0.99] transition-transform" id="btn-export-json" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Diagnostic JSON</span>
+</button>
+<button class="w-full flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-xl bg-error-container text-error font-headline-sm text-headline-sm active:scale-[0.99] transition-transform" id="btn-signout" type="button">
+<span class="material-symbols-outlined text-[18px]">power_settings_new</span>
+<span>Sign Out Current Session</span>
+</button>
+</div>
+<!-- Toast / Snack feedback banner (hidden by default) -->
+<div class="fixed bottom-20 left-4 right-4 z-40 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-xl shadow-lg flex items-center justify-between font-body-sm" id="toast-banner">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]" id="toast-icon">check_circle</span>
+<span id="toast-msg">Action performed successfully</span>
+</div>
+<span class="font-label-sm text-[10px] text-primary-fixed-dim uppercase tracking-wider">OK</span>
+</div>
+</div>
+<script>
+  // Accordion Logic
+  document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const targetId = trigger.getAttribute('data-target');
+      const content = document.getElementById(targetId);
+      const arrow = trigger.querySelector('.accordion-arrow');
+
+      if (!content) return;
+
+      const isHidden = content.classList.contains('hidden');
+      if (isHidden) {
+        content.classList.remove('hidden');
+        arrow.style.transform = 'rotate(0deg)';
+      } else {
+        content.classList.add('hidden');
+        arrow.style.transform = 'rotate(-90deg)';
+      }
+    });
+  });
+
+  // Re-check Connection Interaction
+  const checkBtn = document.getElementById('btn-recheck');
+  const refreshIcon = document.getElementById('recheck-icon');
+  const toast = document.getElementById('toast-banner');
+  const toastMsg = document.getElementById('toast-msg');
+
+  function showToast(message, isSuccess = true) {
+    if (!toast) return;
+    toastMsg.textContent = message;
+    toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2400);
+  }
+
+  if (checkBtn) {
+    checkBtn.addEventListener('click', () => {
+      refreshIcon.classList.add('animate-spin');
+      checkBtn.setAttribute('disabled', 'true');
+      
+      setTimeout(() => {
+        refreshIcon.classList.remove('animate-spin');
+        checkBtn.removeAttribute('disabled');
+        showToast('API Gateway latency re-verified: 21ms');
+      }, 750);
+    });
+  }
+
+  // Diagnostic JSON Export
+  const exportBtn = document.getElementById('btn-export-json');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      const dataPayload = {
+        app_version: "v2.14.0-rc3",
+        build: 410,
+        env: "Production QA Staging",
+        latency_ms: 24,
+        sentry_id: "#rt-8821",
+        exported_at: new Date().toISOString()
+      };
+      
+      const blob = new Blob([JSON.stringify(dataPayload, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "reprotrack-diagnostic-health.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      showToast('Diagnostic log downloaded as JSON');
+    });
+  }
+
+  // Sign out confirmation trigger
+  const signoutBtn = document.getElementById('btn-signout');
+  if (signoutBtn) {
+    signoutBtn.addEventListener('click', () => {
+      if (confirm('Are you sure you want to invalidate Sarah K.\'s active session?')) {
+        showToast('Session invalidated. Redirecting...');
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(21,38,59,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="grid grid-cols-5 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-on-surface-variant transition-colors" data-path="reprotrack-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-[10px] leading-tight">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-on-surface-variant transition-colors" data-path="reprotrack-projects" href="#"><span class="material-symbols-outlined text-[22px]">folder_special</span><span class="font-label-sm text-[10px] leading-tight">Projects</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-on-surface-variant transition-colors" data-path="reprotrack-issues" href="#"><span class="material-symbols-outlined text-[22px]">bug_report</span><span class="font-label-sm text-[10px] leading-tight">Issues</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-on-surface-variant transition-colors" data-path="reprotrack-admin" href="#"><span class="material-symbols-outlined text-[22px]">admin_panel_settings</span><span class="font-label-sm text-[10px] leading-tight">Admin</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] transition-colors text-primary-container font-semibold" data-path="reprotrack-settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span><span class="font-label-sm text-[10px] leading-tight">Settings</span></a></div></nav></body></html>

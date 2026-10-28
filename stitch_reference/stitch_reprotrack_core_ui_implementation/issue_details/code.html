@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#f7f9fc", "on-primary-fixed": "#0a1c31", "surface-tint": "#4f5f77", "surface-variant": "#e0e3e6", "tertiary-fixed-dim": "#61dcac", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#005139", "outline": "#74777d", "on-surface-variant": "#44474d", "inverse-surface": "#2d3133", "primary-fixed-dim": "#b7c8e3", "on-secondary-fixed": "#001d34", "error": "#ba1a1a", "primary": "#001125", "on-secondary-fixed-variant": "#2f4962", "on-secondary-container": "#4a637e", "on-primary": "#ffffff", "on-background": "#191c1e", "surface-dim": "#d8dadd", "on-error": "#ffffff", "inverse-primary": "#b7c8e3", "on-primary-container": "#7d8da7", "tertiary-container": "#002c1d", "surface-bright": "#f7f9fc", "on-error-container": "#93000a", "tertiary": "#00140c", "tertiary-fixed": "#7ff9c7", "secondary-container": "#c5dfff", "on-secondary": "#ffffff", "surface-container": "#eceef1", "primary-fixed": "#d3e4ff", "error-container": "#ffdad6", "on-tertiary-container": "#09a075", "outline-variant": "#c4c6cd", "on-tertiary-fixed": "#002115", "primary-container": "#15263b", "secondary": "#47617b", "on-tertiary": "#ffffff", "surface-container-highest": "#e0e3e6", "surface": "#f7f9fc", "secondary-fixed-dim": "#afc9e8", "surface-container-high": "#e6e8eb", "inverse-on-surface": "#eff1f4", "on-primary-fixed-variant": "#37485e", "on-surface": "#191c1e", "surface-container-low": "#f2f4f7", "secondary-fixed": "#cfe4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-sm": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin-lg": "2rem", "gutter": "1rem", "gutter-sm": "0.75rem", "gutter-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Hanken Grotesk"], "headline-xl": ["Hanken Grotesk"], "headline-md": ["Hanken Grotesk"], "label-lg": ["JetBrains Mono"], "headline-xl-mobile": ["Hanken Grotesk"], "headline-sm": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "label-sm": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "body-lg": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"] }, "fontSize": { "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-sm": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-lg": ["15px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><a class="w-10 h-10 -ml-1 flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="dashboard" href="#" title="Back"><span class="material-symbols-outlined text-[24px]">arrow_back</span></a><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Issue Details</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase mt-0.5">ReproTrack QA Suite</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="Share issue" type="button"><span class="material-symbols-outlined text-[20px]">share</span></button><button class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="More options" type="button"><span class="material-symbols-outlined text-[20px]">more_vert</span></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Overlay (Micro-interaction) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 pointer-events-none opacity-0 translate-y-[-8px]" id="toastNotification">
+<div class="bg-primary text-on-primary shadow-lg rounded-xl px-space-md py-space-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">verified</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Action completed successfully</span>
+</div>
+</div>
+<!-- Breadcrumbs & Triage Header -->
+<section class="px-gutter pt-space-md pb-space-sm bg-surface">
+<!-- Breadcrumb navigation -->
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-sm overflow-x-auto whitespace-nowrap scrollbar-none py-0.5">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">folder_copy</span>
+<span>Projects</span>
+</a>
+<span class="material-symbols-outlined text-[13px] opacity-40">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Core API (RT)</a>
+<span class="material-symbols-outlined text-[13px] opacity-40">chevron_right</span>
+<span class="text-primary font-medium tracking-wide">RT-108</span>
+</nav>
+<!-- Issue Title -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight font-bold mb-space-sm">
+      Auth token refresh loop on mobile disconnect
+    </h1>
+<!-- Semantic Triage Badges -->
+<div class="flex items-center gap-space-xs flex-wrap mb-space-md">
+<!-- Status Badge: IN PROGRESS (Blue tonal) -->
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+        IN PROGRESS
+      </span>
+<!-- Severity Badge: CRITICAL (Red tonal) -->
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-DEFAULT bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+        CRITICAL
+      </span>
+<!-- Priority Badge: URGENT (Coral/Tonal contrast) -->
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[13px] text-error">priority_high</span>
+        URGENT
+      </span>
+<!-- Automation Health Tag -->
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">sync_problem</span>
+        FLAKY REPRO
+      </span>
+</div>
+<!-- Top Action Workflow Bar -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs pb-space-sm">
+<button class="group relative flex items-center justify-center gap-space-xs bg-tertiary-container hover:bg-tertiary text-on-tertiary-fixed font-headline-sm text-headline-sm py-2 px-space-md rounded-xl transition-all shadow-sm active:scale-[0.98]" id="btnMarkFixed" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed transition-transform group-hover:scale-110">task_alt</span>
+<span>Mark Fixed</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs bg-surface-container-lowest text-primary font-headline-sm text-headline-sm py-2 px-space-md rounded-xl shadow-sm hover:bg-surface-container-low transition-all active:scale-[0.98]" id="btnAssignToMe" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">person_add</span>
+<span>Assign to me</span>
+</button>
+</div>
+</section>
+<!-- Main Content Stacks -->
+<div class="flex flex-col gap-space-md px-gutter pb-space-xl mt-space-xs">
+<!-- Metadata Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Issue Context &amp; Ownership</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UTC-04</span>
+</div>
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Reporter and Assignee Row -->
+<div class="grid grid-cols-2 gap-space-md bg-surface-container-low p-space-sm rounded-xl">
+<!-- Reporter -->
+<div class="flex items-start gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-label-md text-label-md shrink-0">
+              SK
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reporter</span>
+<span class="font-body-md text-body-md font-semibold text-primary truncate">Sarah K.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Staff QA • 2d ago</span>
+</div>
+</div>
+<!-- Assignee -->
+<div class="flex items-start gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed font-label-md text-label-md shrink-0">
+              MV
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assignee</span>
+<span class="font-body-md text-body-md font-semibold text-primary truncate">Marcus V.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Backend • 20m ago</span>
+</div>
+</div>
+</div>
+<!-- Project & Environment Details -->
+<div class="grid grid-cols-1 gap-space-xs">
+<div class="flex items-center justify-between py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">dataset</span> Project Target
+            </span>
+<span class="font-label-md text-label-md text-primary font-medium">ReproTrack Core API (RT)</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">terminal</span> Environment
+            </span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-primary font-medium">
+              Staging / v2.14.0-rc3
+            </span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">devices</span> Target OS
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Android 14 / iOS 17</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Description & Repro Matrix -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">subject</span>
+          Defect Summary &amp; Reproduction
+        </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded-DEFAULT">P0-BLOCKER</span>
+</div>
+<!-- Problem Statement -->
+<div class="p-space-sm bg-surface-container-low rounded-xl mb-space-md">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Socket reconnect storm triggers HTTP 422/429 flood when bearer token expires during sleep/wake cycles.
+        </p>
+</div>
+<!-- Steps to Reproduce Card Stack -->
+<div class="mb-space-md">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold mb-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">format_list_numbered</span>
+          Steps to Reproduce
+        </h3>
+<ol class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-high text-primary shrink-0 font-bold">1</span>
+<span class="pt-0.5">Launch client on staging build <span class="font-label-sm text-label-sm px-1 rounded-DEFAULT bg-surface-container-high text-primary">v2.14.0-rc3</span>.</span>
+</li>
+<li class="flex items-start gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-high text-primary shrink-0 font-bold">2</span>
+<span class="pt-0.5">Establish an active authenticated WebSocket session.</span>
+</li>
+<li class="flex items-start gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-high text-primary shrink-0 font-bold">3</span>
+<span class="pt-0.5">Simulate network toggle in background for &gt;15 mins until token invalidates.</span>
+</li>
+<li class="flex items-start gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-high text-primary shrink-0 font-bold">4</span>
+<span class="pt-0.5">Restore device connectivity and observe socket manager ingress.</span>
+</li>
+</ol>
+</div>
+<!-- Expected vs Actual Result Split -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Expected -->
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-1.5 text-on-tertiary-container font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Expected Result
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Silent refresh token exchange with exponential backoff and single authenticated reconnection.
+          </p>
+</div>
+<!-- Actual -->
+<div class="bg-error-container/40 p-space-sm rounded-xl">
+<div class="flex items-center gap-1.5 text-on-error-container font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px] text-error">dangerous</span>
+            Actual Result
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Rapid 10x loop retry per second, triggering API rate limit and terminating session with 429 response.
+          </p>
+</div>
+</div>
+</section>
+<!-- Discussion & Technical Collaboration -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">forum</span>
+          Engineering Discussion
+        </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">1 Note</span>
+</div>
+<!-- Existing Comments Thread -->
+<div class="flex flex-col gap-space-sm mb-space-md" id="commentsContainer">
+<!-- Comment 1 by Marcus V. -->
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center font-label-sm text-label-sm font-bold">
+                MV
+              </div>
+<span class="font-body-md text-body-md font-semibold text-primary">Marcus V.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.2 bg-surface-container-high rounded-DEFAULT">Assignee</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1h ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-normal">
+            Identified lock contention in <span class="font-label-md text-label-md text-primary font-medium">TokenService</span>. PR #412 merged into rc3 for testing.
+          </p>
+</div>
+</div>
+<!-- Comment Composer -->
+<form class="flex flex-col gap-space-xs bg-surface-container-low p-space-sm rounded-xl" id="commentForm">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1" for="commentInput">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+          Add Auditable Note
+        </label>
+<textarea class="w-full bg-surface-container-lowest text-primary placeholder:text-on-surface-variant/60 font-body-md text-body-md p-space-sm rounded-lg outline-none transition-shadow focus:shadow-md resize-none" id="commentInput" placeholder="Add an auditable note or discussion..." rows="3"></textarea>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            Audited &amp; Pinned
+          </div>
+<button class="flex items-center gap-space-xs bg-tertiary-container hover:bg-tertiary text-on-tertiary-fixed font-headline-sm text-headline-sm px-space-md py-1.5 rounded-lg transition-all shadow-sm active:scale-95" type="submit">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">send</span>
+<span>Post comment</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Append-only Audit Activity Timeline -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">history_toggle_off</span>
+          Audit Activity Timeline
+        </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium uppercase tracking-wider">Immutable</span>
+</div>
+<!-- Timeline Rail -->
+<div class="relative pl-6 space-y-space-md">
+<!-- Vertical guide trace -->
+<div class="absolute left-2.5 top-2 bottom-2 w-0.5 bg-surface-container-high"></div>
+<!-- Event 1 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-space-xs flex-wrap">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Marcus V.</span>
+<span class="font-body-sm text-body-sm text-on-surface">transitioned status from</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded-DEFAULT bg-surface-container-high text-on-surface-variant">TRIAGED</span>
+<span class="font-body-sm text-body-sm text-on-surface">to</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-semibold">IN_PROGRESS</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">2h ago</span>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-space-xs flex-wrap">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Alex C.</span>
+<span class="font-body-sm text-body-sm text-on-surface">escalated severity to</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded-DEFAULT bg-error-container text-on-error-container font-semibold">CRITICAL</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Yesterday • 16:42</span>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-space-xs flex-wrap">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Sarah K.</span>
+<span class="font-body-sm text-body-sm text-on-surface">filed bug</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">RT-108</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">2 days ago • Initial Triage</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+    (function initIssueInteractions() {
+      const toast = document.getElementById('toastNotification');
+      const toastMessage = document.getElementById('toastMessage');
+      const btnMarkFixed = document.getElementById('btnMarkFixed');
+      const btnAssign = document.getElementById('btnAssignToMe');
+      const commentForm = document.getElementById('commentForm');
+      const commentInput = document.getElementById('commentInput');
+      const commentsContainer = document.getElementById('commentsContainer');
+
+      let toastTimeout;
+
+      function showToast(msg) {
+        if (!toast || !toastMessage) return;
+        toastMessage.textContent = msg;
+        toast.classList.remove('opacity-0', 'translate-y-[-8px]');
+        toast.classList.add('opacity-100', 'translate-y-0');
+
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'translate-y-[-8px]');
+        }, 2500);
+      }
+
+      if (btnMarkFixed) {
+        btnMarkFixed.addEventListener('click', () => {
+          showToast('Status transitioned to FIXED (Pending Verification)');
+        });
+      }
+
+      if (btnAssign) {
+        btnAssign.addEventListener('click', () => {
+          showToast('Assigned RT-108 to current user session');
+        });
+      }
+
+      if (commentForm && commentInput && commentsContainer) {
+        commentForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const text = commentInput.value.trim();
+          if (!text) return;
+
+          const commentEl = document.createElement('div');
+          commentEl.className = 'bg-surface-container-low p-space-sm rounded-xl transition-all duration-300';
+          commentEl.innerHTML = `
+            <div class="flex items-center justify-between mb-space-xs">
+              <div class="flex items-center gap-space-xs">
+                <div class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary-fixed flex items-center justify-center font-label-sm text-label-sm font-bold">
+                  YOU
+                </div>
+                <span class="font-body-md text-body-md font-semibold text-primary">QA Lead</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.2 bg-surface-container-high rounded-DEFAULT">Reviewer</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Just now</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface leading-normal whitespace-pre-wrap">${text.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
+          `;
+
+          commentsContainer.appendChild(commentEl);
+          commentInput.value = '';
+          showToast('Audit comment recorded');
+        });
+      }
+    })();
+  </script>
+</div></main></body></html>
